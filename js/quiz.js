@@ -3,6 +3,8 @@ $(document).ready(function() {
   $(".answer1").hide();
   $(".answer2").hide();
   $(".answer3").hide();
+  $(".show").hide();
+
   $(".german").on("click", function(event){
     event.preventDefault();
     $('#output').slideToggle("slow");
@@ -42,7 +44,10 @@ $(document).on('click', '.q3', function (event) {
   $(".answer3").slideToggle("slow");
 })
 
-
+$(document).on('click', '.show-comments', function (event) {
+  // event.preventDefault();
+  $(".show").slideToggle("slow");
+})
 
 
 
