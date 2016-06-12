@@ -4,6 +4,10 @@ $(document).ready(function() {
   $(".answer2").hide();
   $(".answer3").hide();
   $(".show").hide();
+  $('.quiz-output').hide();
+  $('.qq1').hide();
+  $('.qq2').hide();
+  $('.qq3').hide();
 
   $(".german").on("click", function(event){
     event.preventDefault();
@@ -44,9 +48,21 @@ $(document).on('click', '.q3', function (event) {
   $(".answer3").slideToggle("slow");
 })
 
-$(document).on('click', '.show-comments', function (event) {
-  // event.preventDefault();
-  $(".show").slideToggle("slow");
+var counter = 0;
+$(document).on('click', '.add', function (event) {
+  event.preventDefault();
+  $(".quiz-output").show("slow");
+
+  if (counter == 0 ){
+    $(".qq1").show();
+    counter++;
+  } else if (counter == 1){
+    $(".qq2").show();
+    counter++;
+  } else if (counter == 2) {
+    $(".qq3").show();
+    counter++;
+  }
 })
 
 

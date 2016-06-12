@@ -1,6 +1,8 @@
 body {
   background-image: url('books.jpeg');
   background-size: cover;
+  /*position: fixed;*/
+  bottom: 0;
   width: 100%;
 }
 
@@ -20,12 +22,39 @@ a:hover {
 }
 
 #output {
-  max-height: 60vh;
+  max-height: 58vh;
   overflow: scroll;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
   text-align: left;
   border-radius: 5px;
   margin-left: 10px;
+  margin-top:10px;
+}
+
+#output li {
+  margin-bottom: 2px;
+}
+
+.quiz-output {
+  background-color: rgba(0,0,0,0.8);
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.quiz-output li {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-quiz {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.superGap{
+  margin-left: 50px;
 }
 
 #right {
@@ -36,7 +65,7 @@ a:hover {
   margin-left: 1.32rem;
 }
 
-.`gap` {
+.gap {
   margin-left: 10px;
 }
 
@@ -45,8 +74,7 @@ a:hover {
 }
 
 .output-header {
-  background-color: rgba(0,0,0,0.1);
-  margin-left: 10px;
+  margin-left: 60px;
 }
 
 ul {
@@ -132,4 +160,16 @@ p {
 .radioOpt {
   color:white;
   margin: 10px;
+}
+
+.btn a {
+  color:white;
+}
+
+.btn a:hover {
+  color: white;
+}
+.btn a:visted {
+  color: white;
+  text-decoration: none;
 }

@@ -21,14 +21,15 @@
 
     <div class="container-fluid col-lg-12">
       <div class="row">
-          <div class="col-lg-6 col-lg-offset-8">
+          <div class="col-lg-4 col-lg-offset-8">
             <h1 class="header">Search. Learn. Grow.</h1>
             <p class="header2">Your Questionnaire Home</p>
           </div>
       </div>
     </div>
 
-    <div class="container-fluid col-lg-4 col-md-4 left">
+    <div class="container-fluid
+    col-lg-4 col-md-4 left">
       <div class="row">
           <h3 class="subheader">Seach for a Question</h3>
           <div class="form-group">
@@ -45,9 +46,9 @@
 
       <div class="row">
           <h3 class="subheader">Popular Subjects</h3>
-            <div class="btn btn-info navbar-btn">Algebra 1</div>
+            <div class="btn btn-info navbar-btn">French 3</div>
             <div class="btn btn-info navbar-btn">Spanish 1</div>
-            <div class="btn btn-info navbar-btn german">German 1</div>
+            <div class="btn btn-info navbar-btn german">German 2</div>
       </div>
 <br>
       <div class="row">
@@ -58,12 +59,15 @@
       </div>
     </div>
 
-    <div class="container-fluid col-lg-7 col-md-7 gap" id="output">
+    <div class="container-fluid col-lg-7 col-md-7 gap">
+
+
+   <div id="output">
       <div class="row gap">
         <h3 id="output-header">German Questions</h3>
       </div>
 
-      <div class="row">
+      <div class="row gap">
         <ul style="list-style:none" class="col-lg-7 col-md-12">
           <li class="text"><div class="btn btn-info q1"><strong>Q: </strong>Write directions from your house to the school.</div>
             <div class="answer1"><p><strong>A: </strong>Gerade aus bis zur Ampel, dann biege nach rechts in der Syracusestrasse ein.</p>
@@ -77,8 +81,10 @@
               <hr>
             </div>
             <div class="row">
-              <div class= "gap>"<p><strong>BeachTeach:</strong> Perfect for learning location nouns and directional adjectives!</p></div>
+              <div class= "gap"><p><strong>BeachTeach:</strong> Perfect for learning location nouns and directional adjectives!</p></div>
+              <div class="comments"><p><a href="#">Add Comment</a></p></div>
             </div>
+
 
             </div>
           </li>
@@ -86,7 +92,6 @@
           <li class="text"><div class="btn btn-info"><strong>Q: </strong><span class='q2'>Translate into German - I like to hike. I don’t swim.</div>
             <div class="answer2"><p><strong>A: </strong>Ich mag wandern. Ich mag schwimmen nicht./ Ich wandre gern.</p>
               <p><strong>Rubric: </strong>The grading rubric goes here here and here.</p>
-=
               <div class="row">
                 <span class="comments"><a href="#">Comments</a></span>
                 <div class="rating">
@@ -95,7 +100,8 @@
               </div>
               <hr>
               <div class="row">
-                <div class= "gap>"<p><strong>profApple16:</strong>Hiking is part of the reason I moved to Colorado.  I like to use this excerise to open a borader discussion on outdoor activities.  It is easy to swap out the verbs for whatever interests your students.</p></div>
+                <div class="gap"><p><strong>profApple16:</strong>Hiking is part of the reason I moved to Colorado.  I like to use this excerise to open a borader discussion on outdoor activities.  It is easy to swap out the verbs for whatever interests your students.</p></div>
+                <div class="comments"><p><a href="#">Add Comment</a></p></div>
               </div>
             </div>
           </li>
@@ -104,7 +110,7 @@
             <div class="answer3"><p><strong>A: </strong>Tanzen wir mal!</p>
               <p><strong>Rubric: </strong>The grading rubric goes here here and here.</p>
               <div class="row">
-                <span class="comments"><a href"#">Show Comments</a></span>
+                <div class="comments"><a href"#">Add Comment</a></div>
                 <div class="rating">
                   <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                 </div>
@@ -120,12 +126,29 @@
           <li class="text"><div class="btn btn-info"><strong>Q: </strong><span class='q'>Explain what you have to do to clean up the kitchen.</div></li>
           <li class="text"><div class="btn btn-info"><strong>Q: </strong><span class='q'>Write the correct form of "you" for your family members, three friends, and the new student at school.</div></li>
         </ul>
+        </div>
+      </div>
+
+      <div class="row btn-quiz">
+        <div class="gap btn btn-success col-lg-2 add">Add to Quiz</div>
+        <div class="gap btn btn-info btn-failure col-lg-3">Remove Question</div>
+        <div class="gap btn btn-info btn-warning col-lg-4"><a href="#">Finalize Quiz</a></div>
+      </div>
+
+    </div>
+
+    <div class="gap container-fluid col-lg-12 quiz-output">
+      <div class="row">
+        <h1 class="subheader gap">Current Quiz</h1>
+      </div>
+      <div class="row">
+        <li class="text"><div class="gap btn btn-info qq1"><strong>Q: </strong>Write directions from your house to the school.</div></li>
+        <li class="text"><div class="gap btn btn-info qq2"><strong>Q: </strong><span class='qq2'>Translate into German - I like to hike. I don’t swim.</div></li>
+        <li class="text"><div class="gap btn btn-info qq3"><strong>Q: </strong><span class='qq3'>Make a suggestion to a friend to help them have a good time.</div></li>
       </div>
     </div>
 
 
-
-    <!-- Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/f4b058bfe8.js"></script>
     <script type="text/javascript" src="js/quiz.js"></script>
